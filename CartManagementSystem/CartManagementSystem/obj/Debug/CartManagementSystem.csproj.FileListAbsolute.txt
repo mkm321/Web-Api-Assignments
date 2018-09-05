@@ -1,0 +1,7 @@
+B:\c# practice\CartManagementSystem\CartManagementSystem\obj\Debug\CartManagementSystem.csprojAssemblyReference.cache
+B:\c# practice\CartManagementSystem\CartManagementSystem\obj\Debug\CartManagementSystem.csproj.CoreCompileInputs.cache
+B:\c# practice\CartManagementSystem\CartManagementSystem\bin\Debug\CartManagementSystem.exe.config
+B:\c# practice\CartManagementSystem\CartManagementSystem\bin\Debug\CartManagementSystem.exe
+B:\c# practice\CartManagementSystem\CartManagementSystem\bin\Debug\CartManagementSystem.pdb
+B:\c# practice\CartManagementSystem\CartManagementSystem\obj\Debug\CartManagementSystem.exe
+B:\c# practice\CartManagementSystem\CartManagementSystem\obj\Debug\CartManagementSystem.pdb
