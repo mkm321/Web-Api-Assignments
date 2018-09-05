@@ -1,6 +1,8 @@
 # Web-Api-Assignments
 https://www.c-sharpcorner.com/article/singleton/
 
+https://www.dofactory.com/net/design-patterns
+
 File Handling Snippet :- 
 
 using System;
