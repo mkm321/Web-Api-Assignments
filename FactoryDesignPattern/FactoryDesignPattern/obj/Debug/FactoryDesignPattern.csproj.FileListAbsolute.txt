@@ -1,0 +1,12 @@
+c:\users\mmehndiratta\source\repos\FactoryDesignPattern\FactoryDesignPattern\bin\Debug\FactoryDesignPattern.exe.config
+c:\users\mmehndiratta\source\repos\FactoryDesignPattern\FactoryDesignPattern\bin\Debug\FactoryDesignPattern.exe
+c:\users\mmehndiratta\source\repos\FactoryDesignPattern\FactoryDesignPattern\bin\Debug\FactoryDesignPattern.pdb
+c:\users\mmehndiratta\source\repos\FactoryDesignPattern\FactoryDesignPattern\obj\Debug\FactoryDesignPattern.csprojAssemblyReference.cache
+c:\users\mmehndiratta\source\repos\FactoryDesignPattern\FactoryDesignPattern\obj\Debug\FactoryDesignPattern.csproj.CoreCompileInputs.cache
+c:\users\mmehndiratta\source\repos\FactoryDesignPattern\FactoryDesignPattern\obj\Debug\FactoryDesignPattern.exe
+c:\users\mmehndiratta\source\repos\FactoryDesignPattern\FactoryDesignPattern\obj\Debug\FactoryDesignPattern.pdb
+c:\users\mmehndiratta\source\repos\FactoryDesignPattern\FactoryDesignPattern\bin\Debug\System.Configuration.ConfigurationManager.dll
+c:\users\mmehndiratta\source\repos\FactoryDesignPattern\FactoryDesignPattern\bin\Debug\System.Security.AccessControl.dll
+c:\users\mmehndiratta\source\repos\FactoryDesignPattern\FactoryDesignPattern\bin\Debug\System.Security.Permissions.dll
+c:\users\mmehndiratta\source\repos\FactoryDesignPattern\FactoryDesignPattern\bin\Debug\System.Security.Principal.Windows.dll
+c:\users\mmehndiratta\source\repos\FactoryDesignPattern\FactoryDesignPattern\obj\Debug\FactoryDesignPattern.csproj.CopyComplete
