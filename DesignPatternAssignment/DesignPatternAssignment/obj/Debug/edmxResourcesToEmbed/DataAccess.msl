@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProductsModelStoreContainer" CdmEntityContainer="ProductsEntities">
+    <EntitySetMapping Name="Activities">
+      <EntityTypeMapping TypeName="ProductsModel.Activity">
+        <MappingFragment StoreEntitySet="Activity">
+          <ScalarProperty Name="ActivityId" ColumnName="ActivityId" />
+          <ScalarProperty Name="ActivityName" ColumnName="ActivityName" />
+          <ScalarProperty Name="ActivityPrice" ColumnName="ActivityPrice" />
+          <ScalarProperty Name="ActivityType" ColumnName="ActivityType" />
+          <ScalarProperty Name="IsSaved" ColumnName="IsSaved" />
+          <ScalarProperty Name="IsBooked" ColumnName="IsBooked" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Airs">
+      <EntityTypeMapping TypeName="ProductsModel.Air">
+        <MappingFragment StoreEntitySet="Air">
+          <ScalarProperty Name="AirId" ColumnName="AirId" />
+          <ScalarProperty Name="AirName" ColumnName="AirName" />
+          <ScalarProperty Name="AirFromCity" ColumnName="AirFromCity" />
+          <ScalarProperty Name="AirToCity" ColumnName="AirToCity" />
+          <ScalarProperty Name="AirClass" ColumnName="AirClass" />
+          <ScalarProperty Name="IsSaved" ColumnName="IsSaved" />
+          <ScalarProperty Name="IsBooked" ColumnName="IsBooked" />
+          <ScalarProperty Name="AirPrice" ColumnName="AirPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cars">
+      <EntityTypeMapping TypeName="ProductsModel.Car">
+        <MappingFragment StoreEntitySet="Car">
+          <ScalarProperty Name="CarId" ColumnName="CarId" />
+          <ScalarProperty Name="CarName" ColumnName="CarName" />
+          <ScalarProperty Name="CarModel" ColumnName="CarModel" />
+          <ScalarProperty Name="IsSaved" ColumnName="IsSaved" />
+          <ScalarProperty Name="IsBooked" ColumnName="IsBooked" />
+          <ScalarProperty Name="CarColour" ColumnName="CarColour" />
+          <ScalarProperty Name="CarPrice" ColumnName="CarPrice" />
+          <ScalarProperty Name="CarType" ColumnName="CarType" />
+          <ScalarProperty Name="CarBrandName" ColumnName="CarBrandName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hotels">
+      <EntityTypeMapping TypeName="ProductsModel.Hotel">
+        <MappingFragment StoreEntitySet="Hotel">
+          <ScalarProperty Name="HotelId" ColumnName="HotelId" />
+          <ScalarProperty Name="HotelName" ColumnName="HotelName" />
+          <ScalarProperty Name="HotelCity" ColumnName="HotelCity" />
+          <ScalarProperty Name="HotelAvailableRooms" ColumnName="HotelAvailableRooms" />
+          <ScalarProperty Name="IsSaved" ColumnName="IsSaved" />
+          <ScalarProperty Name="IsBooked" ColumnName="IsBooked" />
+          <ScalarProperty Name="HotelRoomType" ColumnName="HotelRoomType" />
+          <ScalarProperty Name="HotelPrice" ColumnName="HotelPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
