@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewBag.Title = "AddValues";
+}
+
+<h2 align="center">@ViewBag.name Details </h2>
+<br />
+<br />
+<br />
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Car </h2>
+        @using (Html
+            .BeginForm("SendPostRequest", "Car", FormMethod.Post))
+        {
+        <table>
+            <tr>
+                <td>@Html.Label("Name")</td>
+                <td>@Html.TextBox("carName")</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>@Html.Label("Model")</td>
+                <td>@Html.TextBox("carModel")</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>@Html.Label("Saved")</td>
+                <td>@Html.TextBox("isSaved")</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>@Html.Label("Booked")</td>
+                <td>@Html.TextBox("isBooked")</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>@Html.Label("Colour")</td>
+                <td>@Html.TextBox("carColour")</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>@Html.Label("Price")</td>
+                <td>@Html.TextBox("carPrice")</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>@Html.Label("Type")</td>
+                <td>@Html.TextBox("carType")</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>@Html.Label("Brand")</td>
+                <td>@Html.TextBox("carBrand")</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Add Car Details"</td>
+            </tr>
+        </table>
+        }
+        @TempData["Error"]
+    </div>
+</div>

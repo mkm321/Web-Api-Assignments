@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "LoggedInAsUser";
+}
+
+<h2 align="center">@ViewBag.Message</h2>
+<br />
+<br />
+<br />
+<div class="row">
+    <div class="col-md-4">
+        @using (Html
+            .BeginForm("GetValues", "Car", FormMethod.Post))
+        {
+            <input style =" width:100px;" type="submit" value="Car" />
+        }
+        <br />
+        @using (Html
+           .BeginForm("GetValues", "Activity", FormMethod.Post))
+        {
+            <input style =" width:100px;" type="submit" value="Activity" />
+        }
+        <br />
+        @using (Html
+           .BeginForm("GetValues", "Air", FormMethod.Post))
+        {
+            <input style =" width:100px;" type="submit" value="Air" />
+        }
+        <br />
+        @using (Html
+           .BeginForm("GetValues", "Hotel", FormMethod.Post))
+        {
+            <input style =" width:100px;" type="submit" value="Hotel" />
+        }
+    </div>
+</div>
+<hr />
+
