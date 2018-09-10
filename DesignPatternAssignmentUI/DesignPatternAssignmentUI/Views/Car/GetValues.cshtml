@@ -1,0 +1,67 @@
+﻿
+@model List<DesignPatternAssignmentUI.Models.Car>
+@{
+    ViewBag.Title = "GetValues";
+}
+
+<h2 align="center">@ViewBag.name Details </h2>
+<br />
+<br />
+<br />
+<hr />
+<table class="table table-responsive table-striped table-bordered">
+    <thead>
+        <tr>
+            <th style="background-color: yellow; color: blue">Name</th>
+            <th style="background-color: yellow; color: blue">Brand</th>
+            <th style="background-color: yellow; color: blue">Model</th>
+            <th style="background-color: yellow; color: blue">Colour</th>
+            <th style="background-color: yellow; color: blue">Price</th>
+            <th style="background-color: yellow; color: blue">Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var i in Model)
+        {
+        <tr>
+            <td>@i.CarName</td>
+            <td>@i.CarBrandName</td>
+            <td>@i.CarModel</td>
+            <td>@i.CarColour</td>
+            <td>@i.CarPrice</td>
+            <td>@i.CarType</td>
+            @using (Html
+        .BeginForm("SendPutRequest", "Car", FormMethod.Post))
+            {
+                if (i.IsSaved == "true")
+                {
+                    <td><input class="btn btn-primary" type="submit" value="Save" disabled /></td>
+                }
+                else
+                {
+                    <td><input type="hidden" name="Save" value="@i.CarId,Save" /><input class="btn btn-primary" type="submit" value="Save" /></td>
+                }
+
+            }
+            @using (Html
+            .BeginForm("SendPutRequest", "Car", FormMethod.Post))
+            {
+                if (i.IsBooked == "true")
+                {
+                    <td><input class="btn btn-primary" type="submit" value="Book" disabled /></td>
+                }
+                else
+                {
+                    <td><input type="hidden" name="Save" value="@i.CarId,Book" /><input class="btn btn-primary" type="submit" value="Book" /></td>
+                }
+            }
+        </tr>
+        }
+    </tbody>
+</table>
+
+@Html.ActionLink("Saved Items", "Saved", "Car")
+&nbsp; &nbsp; &nbsp;
+@Html.ActionLink("Booked Items", "Booked", "Car")
+
+

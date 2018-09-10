@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>TAVISCA</h1>
+    <h3>Travel Technology Specialist</h3>
+</div>
+<p> User Login Details :- id= 999, password = 999</p>
+<p> Admin Login Details :- id= 1, password = 1</p>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Login </h2>
+        @using (Html
+            .BeginForm("LoginValidation", "Home", FormMethod.Post))
+        {
+            <table>
+                <tr>
+                    <td>@Html.Label("ID")</td>
+                    <td>@Html.TextBox("loginId")</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>@Html.Label("PASSWORD")</td>
+                    <td>@Html.Password("loginPassword")</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Login"</td>
+                </tr>
+            </table>
+        }
+        @TempData["Error"]
+    </div>
+</div>

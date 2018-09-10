@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "Saved";
+}
+
+<h2>Saved Items</h2>
+<br />
+<br />
+<br />
+<hr />
+<table class="table table-responsive table-striped table-bordered">
+    <thead>
+        <tr>
+            <th style="background-color: yellow; color: blue">Name</th>
+            <th style="background-color: yellow; color: blue">From</th>
+            <th style="background-color: yellow; color: blue">To</th>
+            <th style="background-color: yellow; color: blue">Class</th>
+            <th style="background-color: yellow; color: blue">Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var i in Model)
+        {
+            <tr>
+                <td>@i.AirName</td>
+                <td>@i.AirFromCity</td>
+                <td>@i.AirToCity</td>
+                <td>@i.AirClass</td>
+                <td>@i.AirPrice</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
